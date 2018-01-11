@@ -30,4 +30,85 @@ public class Employee {
         strDepartment = dept;
         strPosition = pos;
     }
+    
+    /**
+        Partial Constructor
+        @param name The employee's name
+        @param idnum The employee's ID Number.
+     */
+    
+    public Employee(String name, int idnum) {
+        strName = name;
+        intIDNumber = idnum;
+        strDepartment = "";
+        strPosition = "";
+    }
+    
+    /**
+        No-arg Constructor
+     */
+    
+    public Employee() {
+        strName = "";
+        intIDNumber = 0;
+        strDepartment = "";
+        strPosition = "";
+    }
+    
+    /**
+        The setName method sets the employee's name to the desired input.
+     */
+    public void setName(String name) {
+        strName = name;
+    }
+        
+    /**
+        The getName method returns the employee's name.
+     */
+    public String getName() {
+        return strName;
+    }
+        
+    /**
+        The setIDNum method sets the employee's ID number to the desired input.
+     */
+    public void setIDNum(int idNum) {
+        intIDNumber = idNum;
+    }
+        
+    /**
+        The getIDNum method returns the employee's ID Number.
+     */
+    public int getIDNum() {
+        return intIDNumber;
+    }
+        
+    /**
+        The setDepartment method sets the employee's department
+        to the desired input.
+     */
+    public void setDepartment(String dept) {
+        strDepartment = dept;
+    }
+        
+    /**
+        The getDepartment method returns the employee's department.
+     */
+    public String getDepartment() {
+        return strDepartment;
+    }
+    
+    /**
+        The setPosition method sets the employee's position to the desired input.
+     */
+    public void setPosition(String pos) {
+        strPosition = pos;
+    }
+        
+    /**
+        The getName method returns the employee's position.
+     */
+    public String getPosition() {
+        return strPosition;
+    }
 }
